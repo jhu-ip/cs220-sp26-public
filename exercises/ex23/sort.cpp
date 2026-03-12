@@ -2,9 +2,10 @@
 #include <cassert>
 #include <vector>
 
-void sort( std::vector< int > * values );
+void sort(std::vector<int> *values);
 
-int main( void ) {
+int main() {
+
   std::vector< int > vec;
   size_t count;
 
@@ -14,15 +15,19 @@ int main( void ) {
 
   // PART 3 TO DO: Make the "vec" vector store "count" random values
 
-  sort( &vec );
+  sort(&vec);
 
-  for( size_t i=1 ; i<vec.size() ; i++ ) assert( vec[i-1]<=vec[i] );
-
+  for (size_t i = 1; i < vec.size(); i++) {
+    assert(vec[i-1] <= vec[i]);
+  }
+  
   return 0;
+
 }
 
-void sort( std::vector< int > *values ) {
+void sort(std::vector<int> *values) {
   
   // PART 5 TO DO: Define the mergesort function
+
 }
 
