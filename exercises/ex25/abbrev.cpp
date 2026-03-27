@@ -20,7 +20,7 @@ bool is_vowel(char c) {
 
 // TODO: finish writing this helper function to create and return
 // the abbreviated version of the word parameter
-string abbreviate(string word) {
+string abbreviate(const string &word) {
   string result;
   bool last_was_vowel = false;
 
