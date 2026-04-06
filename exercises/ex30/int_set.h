@@ -39,20 +39,16 @@ class int_set {
   //return true if insertion successful, false otherwise
   bool add(int new_value);
  
-
   // alternative way to call add, returning this updated int_set
   int_set& operator+=(int new_value);
-
 
   // overload the assignment operator to make a deep copy and return
   // a reference to this updated int_set
   int_set& operator=(const int_set& other);
 
-
   //output items in set, comma-and-space-separated within curly braces
   //E.g.  {1, 2, 3}  or {}
   friend std::ostream& operator<<(std::ostream& os, const int_set& s);
-
 
 };
 

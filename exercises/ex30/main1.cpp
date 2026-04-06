@@ -21,7 +21,6 @@ int main() {
   cout << "just attempted to re-add 1,2,5: " << s << endl;
   cout << "s size is " << s.get_size() << endl;
 
-
   /*
   //This section requires the += operator!
 
@@ -43,16 +42,13 @@ int main() {
   cout << "s still looks like this: " << s << endl;
   */
 
-
   //This section uses clear and get_size functions!
   s.clear();
   cout << "just cleared s: " << s << endl;
   cout << "size of s is " << s.get_size() << endl;
 
-
   //Uncomment the line below once v is declared above
   //cout << "and v's contents are still: " << v << endl;
-
 
   /*
   //This section requires the assignment operator!

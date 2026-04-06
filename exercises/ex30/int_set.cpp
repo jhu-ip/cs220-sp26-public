@@ -1,17 +1,13 @@
 #include "int_set.h"
 
-
 //copy constructor to make a "deep copy" of the set
 int_set::int_set(const int_set& orig){
-
   //TO DO: FILL IN YOUR CODE HERE
 }
 
 //destructor
 int_set::~int_set(){
-
   //TO DO: FILL IN YOUR CODE HERE
-  
 }
 
 //remove all existing items from set
@@ -45,19 +41,19 @@ bool int_set::add(int new_value) {
   //next, create new node to hold the new value
   int_node* new_node = new int_node(new_value);
   if (!new_node) {  //allocation failed!
-	return false; 
+	  return false; 
   }
 
   if (!head) { //list is currently empty
-	head = new_node;
-	size++;
-	return true;
+	  head = new_node;
+	  size++;
+	  return true;
   }
   if (new_value < head->get_data()) { //new_node is smallest
-        new_node->set_next(head);
-	head = new_node;
-	size++;
-	return true;
+    new_node->set_next(head);
+	  head = new_node;
+	  size++;
+	  return true;
   }
 
   //new_node should go somewhere after 1st node, so let's locate
